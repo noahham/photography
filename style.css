@@ -24,11 +24,6 @@ h3 {
     font-weight: 500;
 }
 
-p {
-    font-size: 1rem;
-    color: #141414;
-}
-
 .description {
     margin-left: 25vw;
     margin-right: 25vw;
@@ -39,6 +34,7 @@ p {
     display:flex;
     gap: 10px;
     width: 50px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,6 +42,7 @@ p {
 .icon {
     max-width: 20px;
     opacity: 0.2;
+
     transition: all 0.5s;
 }
 
@@ -65,8 +62,10 @@ p {
 .pricing-card {
     padding-left: 20px;
     padding-right: 20px;
+
     width: 200px;
     height: 350px;
+
     border-radius: 5px;
     border: #d6d6d6 1px solid;
 
@@ -78,20 +77,24 @@ p {
 .reviews-holder {
     display: grid;
     gap: 10px 30px;
-    margin-left: 25vw;
-    margin-right: 25vw;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto auto;
+
+    margin-left: 25vw;
+    margin-right: 25vw;
 }
 
 .section-header {
     font-size: 1rem;
     color: black;
+
     margin-bottom: 35px;
 }
 
 .photo {
-    width: 24vw;
+    width: 100%;
+    margin-bottom: 10px;
+
     transition: all 0.3s;
 }
 
@@ -99,25 +102,25 @@ p {
 
 .image-holder {
     display: flex;
+    gap: 10px;
+
     margin-left: 25vw;
     margin-right: 25vw;
 }
 
-.image-column {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
+.image-column {width: 24vw;}
 
 #logo-holder {
     display: flex;
     justify-content: center;
+
     margin-bottom: 50px;
 }
 
 #logo {
     max-width: 30px;
     transform: rotate(45deg);
+
     transition: all 1s;
 }
 
@@ -142,8 +145,7 @@ p {
         margin-left: 10vw;
         margin-right: 10vw;
     }
-
-    .photo {max-width: 38vw;}
+    .image-column {width: 38vw;}
 }
 
 @media screen and (max-width: 480px) {
@@ -165,4 +167,6 @@ p {
         margin-left: 7vw;
         margin-right: 7vw;
     }
+
+    .image-column {width: 43vw;}
 }
