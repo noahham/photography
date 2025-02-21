@@ -93,8 +93,22 @@ p {
     grid-template-rows: auto auto;
 }
 
+#logo-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#logo {
+    max-width: 30px;
+    transform: rotate(45deg);
+    transition: all 1s;
+}
+
+#logo:hover {transform: rotate(315deg);}
+
 #basic {
-    background-color: #424242;
+    background-color: #4b4b4b;
 }
 
 #standard {
