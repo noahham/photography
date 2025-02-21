@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-    color: white;
+    /*color: white;*/
     font-size: 1.25rem;
     font-weight: 500;
 }
@@ -82,7 +82,7 @@ p {
     transform:translateY(-10px);
 }
 
-.pricing-text {color: white;}
+/*.pricing-text {color: white;}*/
 
 .reviews-holder {
     display: grid;
@@ -91,6 +91,12 @@ p {
     margin-right: 25vw;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto auto;
+}
+
+.section-header {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 35px;
 }
 
 #logo-holder {
@@ -108,15 +114,18 @@ p {
 #logo:hover {transform: rotate(315deg);}
 
 #basic {
-    background-color: #4b4b4b;
+    background-color: white;
+    border: #b0b0b0 1px solid;
 }
 
 #standard {
-    background-color: #292929;
+    background-color: white;
+    border: #b0b0b0 1px solid;
 }
 
 #premium {
-    background-color: black;
+    background-color: white;
+    border: #b0b0b0 1px solid;
 }
 
 @media screen and (max-width: 768px) {
