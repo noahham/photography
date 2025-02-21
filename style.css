@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body {
-    font-family: 'PT Serif', serif;
-}
+body {font-family: 'PT Serif', serif;}
 
-section {
-    margin-top: 100px;
-}
+section {margin-top: 100px;}
 
 h1 {
     font-size: 1.5rem;
@@ -24,7 +20,6 @@ h2 {
 }
 
 h3 {
-    /*color: white;*/
     font-size: 1.25rem;
     font-weight: 500;
 }
@@ -60,7 +55,7 @@ p {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 
     width: 50vw;
     margin-left: auto;
@@ -78,11 +73,7 @@ p {
     transition: all 0.3s;
 }
 
-.pricing-card:hover {
-    transform:translateY(-10px);
-}
-
-/*.pricing-text {color: white;}*/
+.pricing-card:hover {transform:translateY(-10px);}
 
 .reviews-holder {
     display: grid;
@@ -97,6 +88,25 @@ p {
     font-size: 1rem;
     color: black;
     margin-bottom: 35px;
+}
+
+.photo {
+    max-width: 24vw;
+    transition: all 0.3s;
+}
+
+.photo:hover {transform: scale(1.03);}
+
+.image-holder {
+    display: flex;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.image-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 #logo-holder {
@@ -139,9 +149,16 @@ p {
         margin-right: 10vw;
     }
 
-    .pricing-card {
-        padding-right: 30px;
+    .pricing-holder {justify-content: center;}
+
+    .pricing-card {padding-right: 30px;}
+
+    .image-holder {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
+
+    .photo {max-width: 38vw;}
 }
 
 @media screen and (max-width: 480px) {
@@ -155,7 +172,12 @@ p {
         margin-right: 7vw;
     }
 
-    .pricing-card {
-        padding-right: 30px;
+    .pricing-holder {justify-content: center;}
+
+    .pricing-card {padding-right: 30px;}
+
+    .image-holder {
+        margin-left: 7vw;
+        margin-right: 7vw;
     }
 }
