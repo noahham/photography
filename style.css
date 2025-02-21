@@ -4,11 +4,6 @@ body {
     font-family: 'PT Serif', serif;
 }
 
-main {
-    margin-left: 20vw;
-    margin-right: 20vw;
-}
-
 section {
     margin-top: 100px;
 }
@@ -28,7 +23,86 @@ h2 {
     color: #141414;
 }
 
+h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 p {
     font-size: 1rem;
     color: #141414;
+}
+
+.description {
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.icon-holder {
+    margin-top: 50px;
+    display:flex;
+    gap: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    max-width: 20px;
+    opacity: 0.15;
+    transition: all 0.5s;
+}
+
+.icon:hover {opacity: 0.5;}
+
+.pricing-holder {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px red solid;*/
+}
+
+.pricing-card {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 200px;
+    height: 380px;
+    background-color: #f0f0f0;
+}
+
+.pricing-text {
+    color: white;
+
+}
+
+#basic {
+    background-color: black;
+}
+
+#standard {
+    background-color: #292929;
+}
+
+#premium {
+    background-color: #424242;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .description {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
 }
