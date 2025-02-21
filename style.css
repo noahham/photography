@@ -67,8 +67,8 @@ p {
     padding-right: 20px;
     width: 200px;
     height: 350px;
-    background-color: #f0f0f0;
     border-radius: 5px;
+    border: #d6d6d6 1px solid;
 
     transition: all 0.3s;
 }
@@ -91,7 +91,7 @@ p {
 }
 
 .photo {
-    max-width: 24vw;
+    width: 24vw;
     transition: all 0.3s;
 }
 
@@ -122,21 +122,6 @@ p {
 }
 
 #logo:hover {transform: rotate(315deg);}
-
-#basic {
-    background-color: white;
-    border: #b0b0b0 1px solid;
-}
-
-#standard {
-    background-color: white;
-    border: #b0b0b0 1px solid;
-}
-
-#premium {
-    background-color: white;
-    border: #b0b0b0 1px solid;
-}
 
 @media screen and (max-width: 768px) {
     .description {
