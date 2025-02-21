@@ -58,31 +58,43 @@ p {
 
 .pricing-holder {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
 
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
-    /*border: 1px red solid;*/
 }
 
 .pricing-card {
     padding-left: 20px;
     padding-right: 20px;
     width: 200px;
-    height: 380px;
+    height: 350px;
     background-color: #f0f0f0;
+    border-radius: 5px;
+
+    transition: all 0.3s;
 }
 
-.pricing-text {
-    color: white;
+.pricing-card:hover {
+    transform:translateY(-10px);
+}
 
+.pricing-text {color: white;}
+
+.reviews-holder {
+    display: grid;
+    gap: 10px 30px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
 }
 
 #basic {
-    background-color: black;
+    background-color: #424242;
 }
 
 #standard {
@@ -90,7 +102,7 @@ p {
 }
 
 #premium {
-    background-color: #424242;
+    background-color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -98,11 +110,29 @@ p {
         margin-left: 10vw;
         margin-right: 10vw;
     }
+
+    .reviews-holder {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .pricing-card {
+        padding-right: 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .description {
         margin-left: 7vw;
         margin-right: 7vw;
+    }
+
+    .reviews-holder {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    .pricing-card {
+        padding-right: 30px;
     }
 }
