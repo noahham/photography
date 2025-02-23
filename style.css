@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* BASIC ELEMENTS */
+
 body {font-family: 'PT Serif', serif;}
 
 section {margin-top: 100px;}
@@ -43,22 +45,32 @@ form {
     margin-right: 25vw;
 }
 
-.input {
-    font-family: 'PT Serif', serif;
+.section-header {
     font-size: 1rem;
-    border: white 1px solid;
-    border-radius: 3px;
-    outline: none;
-    background-color: white;
-
-    padding: 5px;
-
-    transition: all 0.3s;
+    margin-bottom: 35px;
 }
 
-.input:focus {border: #d6d6d6 1px solid;}
 
-.input:hover {border: #d6d6d6 1px solid;}
+/* NAME SECTION */
+
+#logo-holder {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+#logo {
+    max-width: 30px;
+    transform: rotate(45deg);
+
+    transition: all 1s;
+}
+
+#logo:hover {transform: rotate(315deg);}
+
+
+/* DESCRIPTION SECTION */
 
 .description {
     margin-left: 25vw;
@@ -83,6 +95,44 @@ form {
 }
 
 .icon:hover {opacity: 0.7; transform: scale(1.05);}
+
+
+/* PHOTOS SECTION */
+
+.photo {
+    width: 100%;
+    margin-bottom: 10px;
+
+    transition: all 0.3s;
+}
+
+.photo:hover {transform: scale(1.03);}
+
+.image-holder {
+    display: flex;
+    gap: 10px;
+
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.image-column {width: 24vw;}
+
+
+/* REVIEWS SECTION */
+
+.reviews-holder {
+    display: grid;
+    gap: 10px 30px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
+
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+
+/* PRICING SECTION */
 
 .pricing-holder {
     display: flex;
@@ -110,57 +160,25 @@ form {
 
 .pricing-card:hover {transform:translateY(-10px);}
 
-.reviews-holder {
-    display: grid;
-    gap: 10px 30px;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: auto auto;
 
-    margin-left: 25vw;
-    margin-right: 25vw;
-}
+/* NEWSLETTER SECTION */
 
-.section-header {
+.input {
+    font-family: 'PT Serif', serif;
     font-size: 1rem;
-    color: black;
+    border: white 1px solid;
+    border-radius: 3px;
+    outline: none;
+    background-color: white;
 
-    margin-bottom: 35px;
-}
-
-.photo {
-    width: 100%;
-    margin-bottom: 10px;
+    padding: 5px;
 
     transition: all 0.3s;
 }
 
-.photo:hover {transform: scale(1.03);}
+.input:focus {border: #d6d6d6 1px solid;}
 
-.image-holder {
-    display: flex;
-    gap: 10px;
-
-    margin-left: 25vw;
-    margin-right: 25vw;
-}
-
-.image-column {width: 24vw;}
-
-#logo-holder {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 50px;
-}
-
-#logo {
-    max-width: 30px;
-    transform: rotate(45deg);
-
-    transition: all 1s;
-}
-
-#logo:hover {transform: rotate(315deg);}
+.input:hover {border: #d6d6d6 1px solid;}
 
 #sign-up {
     transition: all 0.5s;
@@ -170,11 +188,32 @@ form {
 }
 
 
+/* SCROLLBAR */
+
+::-webkit-scrollbar {width: 7px;}
+
+::-webkit-scrollbar-track {background: white;}
+
+::-webkit-scrollbar-thumb {
+    background: #B3B3B3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {background: #808080;}
+
+
 @media screen and (max-width: 768px) {
     .description {
         margin-left: 10vw;
         margin-right: 10vw;
     }
+
+    .image-holder {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .image-column {width: 38vw;}
 
     .reviews-holder {
         margin-left: 10vw;
@@ -184,12 +223,6 @@ form {
     .pricing-holder {justify-content: center;}
 
     .pricing-card {padding-right: 30px;}
-
-    .image-holder {
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-    .image-column {width: 38vw;}
 }
 
 
@@ -199,6 +232,13 @@ form {
         margin-right: 7vw;
     }
 
+    .image-holder {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    .image-column {width: 43vw;}
+
     .reviews-holder {
         margin-left: 7vw;
         margin-right: 7vw;
@@ -207,11 +247,4 @@ form {
     .pricing-holder {justify-content: center;}
 
     .pricing-card {padding-right: 30px;}
-
-    .image-holder {
-        margin-left: 7vw;
-        margin-right: 7vw;
-    }
-
-    .image-column {width: 43vw;}
 }
