@@ -46,7 +46,6 @@
                         <img src="images/img_15.jpg" alt="Photo 15" class="photo">
                         <img src="images/img_16.jpg" alt="Photo 16" class="photo">
                         <img src="images/img_17.jpg" alt="Photo 17" class="photo">
-
                     </div>
                 </div>
             </section>
@@ -56,7 +55,7 @@
                 <div class="reviews-holder">
                     <div class="review"><p>I needed some quick headshots for my LinkedIn profile, and this was perfect! The session was fast, easy, and the photos turned out great. I got my images in just a few days. Highly recommend for anyone on a budget!</p><br><p>Absolutely loved my experience! The photographer was professional, friendly, and knew exactly how to get the best angles. The photos turned out amazing, and I got more than I expected for the price. I’ll definitely book again!</p></div>
                     <div class="review"><p>I booked the standard package for my engagement photos, and I couldn’t be happier! The photographer made us feel completely at ease and guided us through natural poses that didn’t feel forced. The turnaround time was quick, and the final edits were absolutely stunning. The little extras, like the social media-optimized versions, made sharing the pictures so easy. It was worth every penny, and I will definitely be coming back for future shoots!</p></div>
-                    <div class="review" style="grid-column: span 2;"><p>From start to finish, the experience was top-notch. I booked the premium package for a branding shoot for my business, and the attention to detail was incredible. The photographer took the time to understand my brand’s aesthetic and created a personalized session that truly captured my vision. The full retouching made every image look polished and professional, and I even received a gorgeous print as part of the package. Having priority editing was a game-changer, too—I had my best shots ready within 48 hours! This is hands down the best photography service I’ve ever invested in.</p></div>
+                    <div class="review" style="grid-column: span 2;"><p>From start to finish, the experience was top-notch. I booked the premium package for a branding shoot for my business, and the attention to detail was incredible. The photographer took the time to understand my brand’s aesthetic and created a personalized session that truly captured my vision. The full retouching made every image look polished and professional, and I even received a gorgeous print as part of the package. Having a quick turnaround time was a game-changer, too—I had my best shots ready within 48 hours! This is hands down the best photography service I’ve ever invested in.</p></div>
 
                 </div>
             </section>
@@ -96,7 +95,32 @@
                     </div>
                 </div>
             </section>
-            <div style="padding-bottom:100px;"></div>
+            <!-- NEWSLETTER SECTION -->
+            <section>
+                <h2 class="section-header">NEWSLETTER</h2>
+                <p class="description">Sign up for my photography newsletter to get exclusive tips, behind-the-scenes insights, and inspiration straight to your inbox! Whether you're a beginner or a seasoned photographer, you'll find valuable content to help you improve your skills and stay motivated.</p>
+                <form onsubmit="showDialog(event)">
+                    <div style="display: block;">
+                        <div>
+                            <label for="email">Enter your email: </label>
+                            <input type="text" class="input" id="email" name="firstname" placeholder="example@gmail.com">
+                        </div>
+                        <div style="display: flex;justify-content: center;">
+                            <button type="submit" class="input" id="sign-up">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer>
+                <p>All images and graphics created by me. (&copy; Noah Ham 2025) </p>
+            </footer>
         </main>
+        <script>
+            function showDialog(e) {
+                e.preventDefault();
+                let inputValue = document.getElementById("email").value;
+                alert("Subscribed with email: " + inputValue);
+            }
+        </script>
     </body>
 </html>
