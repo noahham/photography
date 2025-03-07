@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Noah Ham</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="icon" href="/icons/favicon.png" type="image/png">
     </head>
     <body>
@@ -11,13 +11,13 @@
             <div id="trigger"></div>
             <nav class="navbar">
                 <a href="#" id="logo-holder"><img src="icons/logo.png" alt="NH Logo" id=logo></a>
-                <a href="#" class="nav-link">Photos</a>
-                <a href="#" class="nav-link">Testimonials</a>
-                <a href="#" class="nav-link">Pricing</a>
-                <a href="#" class="nav-link">Newsletter</a>
+                <a href="#photos" class="nav-link">Photos</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#newsletter" class="nav-link">Newsletter</a>
             </nav>
             <!-- NAME SECTION -->
-            <section id="top">
+            <section style="padding-top:0;">
                 <h1>NOAH HAM</h1>
                 <h2>PHOTOGRAPHY</h2>
             </section>
@@ -31,7 +31,7 @@
                 </div>
             </section>
             <!-- PHOTOS SECTION -->
-            <section>
+            <section id="photos">
                 <h2 class="section-header" style="display:none;">PHOTOS</h2>
                 <div class="image-holder">
                     <div class="image-column">
@@ -59,7 +59,7 @@
                 </div>
             </section>
             <!-- REVIEWS SECTION -->
-            <section>
+            <section id="testimonials">
                 <h2 class="section-header">TESTIMONIALS</h2>
                 <div class="reviews-holder">
                     <div class="review"><p>I needed some quick headshots for my LinkedIn profile, and this was perfect! The session was fast, easy, and the photos turned out great. I got my images in just a few days. Highly recommend for anyone on a budget!</p><br><p>Absolutely loved my experience! The photographer was professional, friendly, and knew exactly how to get the best angles. The photos turned out amazing, and I got more than I expected for the price. I’ll definitely book again!</p></div>
@@ -69,7 +69,7 @@
                 </div>
             </section>
             <!-- PRICING SECTION -->
-            <section>
+            <section id="pricing">
                 <h2 class="section-header">PRICING</h2>
                 <div class="pricing-holder">
                     <div class="pricing-card">
@@ -105,7 +105,7 @@
                 </div>
             </section>
             <!-- NEWSLETTER SECTION -->
-            <section>
+            <section id="newsletter">
                 <h2 class="section-header">NEWSLETTER</h2>
                 <p class="description">Sign up for my photography newsletter to get exclusive tips, behind-the-scenes insights, and inspiration straight to your inbox! Whether you're a beginner or a seasoned photographer, you'll find valuable content to help you improve your skills and stay motivated.</p>
                 <form onsubmit="showDialog(event)">
