@@ -8,6 +8,7 @@ html {
 body {
     font-family: 'PT Serif', serif;
     margin:0;
+    overflow-x: hidden;
 }
 
 section {padding-top: 100px;}
@@ -68,6 +69,7 @@ form {
     display: flex;
     gap: 40px;
     position: sticky;
+    width: 100%;
     border-bottom: 1px white solid;
 
     padding: 10px;
@@ -79,7 +81,7 @@ form {
 
 .nav-link {
     text-decoration: none;
-    color: black;
+    color: #757575;
     height: 16px;
     transform: translateY(-2px);
     opacity: 0;
@@ -269,6 +271,8 @@ form {
 
 ::-webkit-scrollbar-thumb:hover {background: #808080;}
 
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
     .nav-link{display:none}

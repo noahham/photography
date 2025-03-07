@@ -1,34 +1,15 @@
-p {
-    margin-top: 5px;
-}
+p {margin-top: 5px;}
 
-section {
-    padding-top: 75px;
-}
+section {padding-top: 75px;}
 
-.about-photo {
-    width: 100%;
-    transition: all 0.3s;
-}
 
-.about-photo:hover {
-    transform: scale(1.03);
-}
-
-.about-container {
-    display: flex;
-    gap: 25px;
-
-    margin-top: 50px;
-    margin-left: 25vw;
-    margin-right: 25vw;
-}
+/* BACK BUTTON */
 
 .back-button {
     display: block;
     width: 130px;
-    text-decoration: underline white;
-    color: black;
+    text-decoration: none;
+    color: #757575;
     border-bottom: 1px solid white;
 
     margin-left: 5vw;
@@ -37,6 +18,70 @@ section {
     transition: all 0.5s;
 }
 
-.back-button:hover {
-    text-decoration-color: black;
+.back-button:hover {color: black;}
+
+
+/* ABOUT SECTION */
+
+.about-container {
+    display: flex;
+    gap: 25px;
+
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding-bottom: 5px;
+}
+
+
+/* WEEKLY PHOTO */
+
+.about-photo {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.about-photo:hover {transform: scale(1.03);}
+
+.about-photo-holder {width: 45%;}
+
+
+/* ABOUT TEXT */
+
+.about-text-holder {width: 55%;}
+
+.link-holder {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: #757575;
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+.social-link:hover {color: black;}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .about-photo-holder {width: 100%;}
+    .about-text-holder {width: 100%;}
+}
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
 }
