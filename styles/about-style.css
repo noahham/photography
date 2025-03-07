@@ -1,0 +1,42 @@
+p {
+    margin-top: 5px;
+}
+
+section {
+    padding-top: 75px;
+}
+
+.about-photo {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.about-photo:hover {
+    transform: scale(1.03);
+}
+
+.about-container {
+    display: flex;
+    gap: 25px;
+
+    margin-top: 50px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.back-button {
+    display: block;
+    width: 130px;
+    text-decoration: underline white;
+    color: black;
+    border-bottom: 1px solid white;
+
+    margin-left: 5vw;
+    margin-bottom: 100px;
+
+    transition: all 0.5s;
+}
+
+.back-button:hover {
+    text-decoration-color: black;
+}
