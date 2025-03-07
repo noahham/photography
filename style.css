@@ -68,7 +68,7 @@ form {
 
 .navbar {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     position: sticky;
     border-bottom: 1px white solid;
 
@@ -81,13 +81,27 @@ form {
 
 .nav-link {
     text-decoration: none;
-    /*border: 1px red solid;*/
-    color: white;
+    color: black;
     height: 16px;
+    transform: translateY(-2px);
+    opacity: 0;
+    visibility: hidden;
+
     margin-top: auto;
     margin-bottom: auto;
 
-    transition: all 1s 0.75s;
+    transition: all 0.75s;
+}
+
+.navbar.stuck .nav-link {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar:not(.stuck) .nav-link {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s;
 }
 
 .navbar.stuck {
@@ -101,9 +115,6 @@ form {
     transform: translateX(0) rotate(360deg);
 }
 
-.navbar.stuck .nav-link {
-    color: black;
-}
 
 
 
