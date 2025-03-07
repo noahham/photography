@@ -139,6 +139,24 @@ form {
     transform: translateX(0) rotate(360deg);
 }
 
+.menu-bar {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+}
+
+.menu-icon-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.fixed-icon-holder {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 11;
+}
 
 /* DESCRIPTION SECTION */
 
@@ -267,6 +285,7 @@ form {
 ::-webkit-scrollbar-thumb {
     background: #B3B3B3;
     border-radius: 5px;
+    z-index:1;
 }
 
 ::-webkit-scrollbar-thumb:hover {background: #808080;}
