@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     closeIcon.addEventListener("click", function () {
-        slidingMenu.style.transform = "translateX(200px)";
+        slidingMenu.style.transform = "translateX(210px)";
     });
 });

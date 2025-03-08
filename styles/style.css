@@ -93,6 +93,8 @@ form {
     transition: all 0.75s;
 }
 
+.nav-link:hover {color:black;}
+
 .navbar.stuck .nav-link {
     visibility: visible;
     opacity: 1;
@@ -174,7 +176,7 @@ form {
     gap: 10px;
     border-left: 1px #d6d6d6 solid;
     z-index: 11;
-    transform: translateX(200px);
+    transform: translateX(210px);
 
     transition: all 0.3s;
 }
@@ -257,7 +259,7 @@ form {
     transition: all 0.3s;
 }
 
-.photo:hover {transform: scale(1.03);}
+.photo:hover {transform: scale(1.02);}
 
 .image-holder {
     display: flex;
