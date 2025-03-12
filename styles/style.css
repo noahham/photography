@@ -162,6 +162,10 @@ form {
     z-index: 11;
 }
 
+.fixed-icon-holder:hover {
+    cursor: pointer;
+}
+
 /* SLIDING MENU */
 
 #sliding-menu {
@@ -191,6 +195,8 @@ form {
     margin-top: 20px;
     margin-bottom: 25px;
 }
+
+.x-holder:hover {cursor: pointer;}
 
 .x-line {
     position: absolute;
