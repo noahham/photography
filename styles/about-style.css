@@ -13,7 +13,7 @@ section {padding-top: 75px;}
     border-bottom: 1px solid white;
 
     margin-left: 5vw;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 
     transition: all 0.5s;
 }
@@ -40,7 +40,7 @@ section {padding-top: 75px;}
     transition: all 0.3s;
 }
 
-.about-photo:hover {transform: scale(1.03);}
+.about-photo:hover {transform: scale(1.02);}
 
 .about-photo-holder {width: 45%;}
 
