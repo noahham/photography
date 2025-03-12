@@ -114,7 +114,7 @@ form {
 #logo-holder {
     display: flex;
     justify-content: center;
-    transform: translateX(48.5vw);
+    transform: translateX(calc(50vw - 20px));
     width: 20px;
     height: 20px;
 
@@ -364,10 +364,8 @@ form {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .nav-link{display:none}
-
-    #logo-holder {transform: translateX(45vw);}
 
     .description {
         margin-left: 10vw;
@@ -382,6 +380,9 @@ form {
     .image-column {width: 38vw;}
 
     .reviews-holder {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         margin-left: 10vw;
         margin-right: 10vw;
     }
